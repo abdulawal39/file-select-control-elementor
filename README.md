@@ -1,4 +1,4 @@
-# elementor-file-select-control
+# Elementor File Select Control
 Adds a new control for Elementor page builder which allows you to choose any kind of file from WordPress Media Library. Its Created for developers to take the code and use in your own project.
 
 Additionally this plugin comes with an Elementor Widget just to demonstrate how to integrate manily but that let's you create simple links to Media Files.
