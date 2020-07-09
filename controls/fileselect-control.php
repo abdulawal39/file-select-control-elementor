@@ -67,7 +67,7 @@ class FileSelect_Control extends \Elementor\Base_Data_Control {
 		<div class="elementor-control-field">
 			<label for="<?php echo esc_attr( $control_uid ); ?>" class="elementor-control-title">{{{ data.label }}}</label>
 			<div class="elementor-control-input-wrapper">
-				<a href="#" class="tnc-select-file elementor-button elementor-button-success" style="padding: 10px 15px; display: block;text-align: center;" id="select-file-<?php echo esc_attr( $control_uid ); ?>" ><?php echo esc_html__( "Choose / Upload File", 'elementor-file-select-control' ); ?></a> <br />
+				<a href="#" class="tnc-select-file elementor-button elementor-button-success" style="padding: 10px 15px; display: block;text-align: center;" id="select-file-<?php echo esc_attr( $control_uid ); ?>" ><?php echo esc_html__( "Choose / Upload File", 'file-select-control-elementor' ); ?></a> <br />
 
 				<input type="text" class="tnc-selected-fle-url" id="<?php echo esc_attr( $control_uid ); ?>" data-setting="{{ data.name }}" placeholder="{{ data.placeholder }}">
 			</div>
