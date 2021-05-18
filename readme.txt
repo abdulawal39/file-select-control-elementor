@@ -3,7 +3,7 @@ Contributors: abdulawal39, ThemeNcode
 Donate link: http://go.abdulawal.com/donate
 Tags: elementor, media, file select, elementor control, elementor file link, elementor media extended
 Requires at least: 4.0
-Tested up to: 5.4.2
+Tested up to: 5.7.2
 Stable tag: 1.3
 Requires PHP: 7.0
 License: GPLv2 or later
