@@ -4,7 +4,7 @@ Donate link: http://go.abdulawal.com/donate
 Tags: elementor, media, file select, elementor control, elementor file link, elementor media extended
 Requires at least: 4.0
 Tested up to: 5.4.2
-Stable tag: 1.2
+Stable tag: 1.3
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -63,6 +63,9 @@ Please find more details of integration here: https://abdulawal.com/elementor-fi
 1. Adding control to widget
 
 == Changelog ==
+= 1.3 =
+* Updated Pull request #1 from bazaim which includes add remove btn / apply MimeType filter & reviewed UI
+
 = 1.2 =
 * Updated Name of language pot file
 * Updated Text Domain

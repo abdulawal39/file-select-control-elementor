@@ -3,7 +3,7 @@
  * Plugin Name: File Select Control for Elementor
  * Description: This addon adds a new control file-select to use in your widgets. Specially for developers.
  * Plugin URI:  https://abdulawal.com/elementor-file-select-control/
- * Version:     1.2
+ * Version:     1.3
  * Author:      ThemeNcode
  * Author URI:  https://themencode.com/
  * Text Domain: file-select-control-for-elementor
@@ -30,7 +30,7 @@ final class Elementor_File_Select_Control_Addon {
 	 *
 	 * @var string The plugin version.
 	 */
-	const VERSION = '1.2';
+	const VERSION = '1.3';
 
 	/**
 	 * Minimum Elementor Version
