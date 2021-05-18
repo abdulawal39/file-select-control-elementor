@@ -33,7 +33,7 @@ class Elementor_File_Link_Widget extends \Elementor\Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'File Link', 'file-select-control-elementor' );
+		return esc_html__( 'File Link', 'file-select-control-for-elementor' );
 	}
 
 	/**
@@ -77,7 +77,7 @@ class Elementor_File_Link_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'settings_section',
 			[
-				'label' => esc_html__( 'Settings', 'file-select-control-elementor' ),
+				'label' => esc_html__( 'Settings', 'file-select-control-for-elementor' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -85,20 +85,20 @@ class Elementor_File_Link_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'file_link',
 			[
-				'label' => esc_html__( 'Select File', 'file-select-control-elementor' ),
+				'label' => esc_html__( 'Select File', 'file-select-control-for-elementor' ),
 				'type'	=> 'file-select',
-				'placeholder' => esc_html__( 'URL to File', 'file-select-control-elementor' ),
-				'description' => esc_html__( 'Select file from media library or upload', 'file-select-control-elementor' ),
+				'placeholder' => esc_html__( 'URL to File', 'file-select-control-for-elementor' ),
+				'description' => esc_html__( 'Select file from media library or upload', 'file-select-control-for-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'link_text',
 			[
-				'label' => esc_html__( 'Link Text', 'file-select-control-elementor' ),
+				'label' => esc_html__( 'Link Text', 'file-select-control-for-elementor' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'placeholder' => esc_html__( 'Ex. Open File', 'file-select-control-elementor' ),
-				'description' => esc_html__( 'Text that should be displayed as a link', 'file-select-control-elementor' ),
+				'placeholder' => esc_html__( 'Ex. Open File', 'file-select-control-for-elementor' ),
+				'description' => esc_html__( 'Text that should be displayed as a link', 'file-select-control-for-elementor' ),
 				'default'	=> 'Open File',
 			]
 		);
@@ -106,25 +106,25 @@ class Elementor_File_Link_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'link_target',
 			[
-				'label' => esc_html__( 'Link Target', 'file-select-control-elementor' ),
+				'label' => esc_html__( 'Link Target', 'file-select-control-for-elementor' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
-					'_parent' => esc_html__( 'Same Tab', 'file-select-control-elementor' ),
-					'_blank' => esc_html__( 'New Tab', 'file-select-control-elementor' ),
+					'_parent' => esc_html__( 'Same Tab', 'file-select-control-for-elementor' ),
+					'_blank' => esc_html__( 'New Tab', 'file-select-control-for-elementor' ),
 				],
 				'default' => '_parent',
-				'description' => esc_html__( 'CSS class to add to the link', 'file-select-control-elementor' ),
+				'description' => esc_html__( 'CSS class to add to the link', 'file-select-control-for-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'link_css_class',
 			[
-				'label' => esc_html__( 'Link CSS Class', 'file-select-control-elementor' ),
+				'label' => esc_html__( 'Link CSS Class', 'file-select-control-for-elementor' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'input_type' => 'text',
-				'placeholder' => esc_html__( 'Ex. file-link', 'file-select-control-elementor' ),
-				'description' => esc_html__( 'CSS class to add to the link', 'file-select-control-elementor' ),
+				'placeholder' => esc_html__( 'Ex. file-link', 'file-select-control-for-elementor' ),
+				'description' => esc_html__( 'CSS class to add to the link', 'file-select-control-for-elementor' ),
 			]
 		);
 

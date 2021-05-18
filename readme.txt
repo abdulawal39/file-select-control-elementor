@@ -1,10 +1,10 @@
 === File Select Control For Elementor ===
 Contributors: abdulawal39, ThemeNcode
 Donate link: http://go.abdulawal.com/donate
-Tags: elementor, file select, elementor control, elementor file link, elementor media extended
-Requires at least: 3.0
+Tags: elementor, media, file select, elementor control, elementor file link, elementor media extended
+Requires at least: 4.0
 Tested up to: 5.4.2
-Stable tag: 1.0
+Stable tag: 1.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,13 +17,15 @@ This addon comes with a small widget that allows you to create a link to any med
 
 The main part of this plugin is the new file select control, you can use this in combination of this plugin for just integrate with your project by taking code from this plugin.
 
+This addon comes with a new elementor control called file-select which you can use in your widgets. Simply put file-select in the type parameter of add_control() while creating the widget.
+
 Please find more details on how to use and integrate this control here: <a href="https://abdulawal.com/elementor-file-select-control/">https://abdulawal.com/elementor-file-select-control/</a>
 
 <h3>Features :</h3>
 
 * Work with any type of file
 * Easy to use
-* Very Lightwight Plugin
+* Very Lightweight Plugin
 
 Please Don't Forget to leave a review if you find this plugin useful. <br />
 Thanks<br />
@@ -36,7 +38,7 @@ Installing this plugin is pretty simple like all other wordpress plugins. Here a
 
 * Download the zipped plugin from wordpress repository
 * Extract the zipped folder 
-* Upload `file-select-control-elementor.zip` to the `/wp-content/plugins/` directory
+* Upload `file-select-control-for-elementor.zip` to the `/wp-content/plugins/` directory
 * Activate the plugin through the 'Plugins' menu in WordPress
 * Go to any page or post editor and you'll see the new widget called File Link or.
 
@@ -58,8 +60,15 @@ Please find more details of integration here: https://abdulawal.com/elementor-fi
 == Screenshots ==
 
 1. Editor View
+1. Adding control to widget
 
 == Changelog ==
+= 1.2 =
+* Updated Name of language pot file
+* Updated Text Domain
+
+= 1.1 =
+* Added Language file
 
 = 1.0 =
 * First Release.

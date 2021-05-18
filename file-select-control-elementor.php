@@ -3,10 +3,10 @@
  * Plugin Name: File Select Control for Elementor
  * Description: This addon adds a new control file-select to use in your widgets. Specially for developers.
  * Plugin URI:  https://abdulawal.com/elementor-file-select-control/
- * Version:     1.0
+ * Version:     1.2
  * Author:      ThemeNcode
  * Author URI:  https://themencode.com/
- * Text Domain: file-select-control-elementor
+ * Text Domain: file-select-control-for-elementor
  * License: GPLv2 (or later)
  */
 
@@ -30,7 +30,7 @@ final class Elementor_File_Select_Control_Addon {
 	 *
 	 * @var string The plugin version.
 	 */
-	const VERSION = '1.0';
+	const VERSION = '1.2';
 
 	/**
 	 * Minimum Elementor Version
@@ -110,7 +110,7 @@ final class Elementor_File_Select_Control_Addon {
 	 */
 	public function i18n() {
 
-		load_plugin_textdomain( 'file-select-control-elementor' );
+		load_plugin_textdomain( 'file-select-control-for-elementor' );
 
 	}
 
@@ -167,9 +167,9 @@ final class Elementor_File_Select_Control_Addon {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'file-select-control-elementor' ),
-			'<strong>' . esc_html__( 'File Select Control for Elementor', 'file-select-control-elementor' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'file-select-control-elementor' ) . '</strong>'
+			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'file-select-control-for-elementor' ),
+			'<strong>' . esc_html__( 'File Select Control for Elementor', 'file-select-control-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'file-select-control-for-elementor' ) . '</strong>'
 		);
 
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -191,9 +191,9 @@ final class Elementor_File_Select_Control_Addon {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'file-select-control-elementor' ),
-			'<strong>' . esc_html__( 'File Select Control for Elementor', 'file-select-control-elementor' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'file-select-control-elementor' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'file-select-control-for-elementor' ),
+			'<strong>' . esc_html__( 'File Select Control for Elementor', 'file-select-control-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'file-select-control-for-elementor' ) . '</strong>',
 			 self::MINIMUM_ELEMENTOR_VERSION
 		);
 
@@ -216,9 +216,9 @@ final class Elementor_File_Select_Control_Addon {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'file-select-control-elementor' ),
-			'<strong>' . esc_html__( 'File Select Control for Elementor', 'file-select-control-elementor' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'file-select-control-elementor' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'file-select-control-for-elementor' ),
+			'<strong>' . esc_html__( 'File Select Control for Elementor', 'file-select-control-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'file-select-control-for-elementor' ) . '</strong>',
 			 self::MINIMUM_PHP_VERSION
 		);
 
