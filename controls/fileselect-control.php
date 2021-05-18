@@ -64,17 +64,64 @@ class FileSelect_Control extends \Elementor\Base_Data_Control {
 	public function content_template() {
 		$control_uid = $this->get_control_uid();
 		?>
-		<div class="elementor-control-field">
-			<label for="<?php echo esc_attr( $control_uid ); ?>" class="elementor-control-title">{{{ data.label }}}</label>
-			<div class="elementor-control-input-wrapper">
-				<a href="#" class="tnc-select-file elementor-button elementor-button-success" style="padding: 10px 15px; display: block;text-align: center;" id="select-file-<?php echo esc_attr( $control_uid ); ?>" ><?php echo esc_html__( "Choose / Upload File", 'file-select-control-for-elementor' ); ?></a> <br />
+			<div class="elementor-control-field">
+				<label for="<?php echo esc_attr( $control_uid ); ?>" class="elementor-control-title" style="display:block">
+					{{{ data.label }}}
+				</label>
+				
+				<# if ( !!data.controlValue ) { #>
+					<small style="display:block; width:100%; padding-top:7px;">
+						{{{ data.controlValue }}}
+					</small>
+				<# } #>
+				
+				<div class="elementor-control-input-wrapper"
+					style="display:flex; margin-right:-10px; width:calc( 100% + 10px );">
+					<div style="flex-grow:1;">
+						<a href="#"
+							class="tnc-select-file elementor-button elementor-button-success"
+							style="padding:10px 15px; text-align:center; display:block; margin-right:10px;"
+							id="select-file-<?php echo esc_attr( $control_uid ); ?>">
+							<# if ( !data.controlValue ) { #>
+								<?php echo __("Select"); ?>
+							<# } #>
+							<# if ( !!data.controlValue ) { #>
+								<?php echo __("Edit"); ?>
+							<# } #>
+						</a>
+					</div>
 
-				<input type="text" class="tnc-selected-fle-url" id="<?php echo esc_attr( $control_uid ); ?>" data-setting="{{ data.name }}" placeholder="{{ data.placeholder }}">
+					<# if ( !!data.controlValue ) { #>
+						<div style="flex-shrink:1;">
+							<a href="{{{ data.controlValue }}}" target="_blank"
+								class="tnc-view-file elementor-button elementor-button-warning"
+								style="padding:10px 15px; text-align:center; margin-right:10px;"
+								id="select-file-<?php echo esc_attr( $control_uid ); ?>-link"
+								title="<?php echo __("View"); ?>">
+								<i class="eicon-link" style="margin-right:0;"></i>
+							</a>
+							<a href="#"
+								class="tnc-remove-file elementor-button elementor-button-danger"
+								style="padding:10px 15px; text-align:center; margin-right:10px;"
+								id="select-file-<?php echo esc_attr( $control_uid ); ?>-remove"
+								title="<?php echo __("Remove"); ?>">
+								<i class="eicon-trash" style="margin-right:0;"></i>
+							</a>
+						</div>
+					<# } #>
+					
+					<input type="hidden"
+						class="tnc-selected-fle-url"
+						id="<?php echo esc_attr( $control_uid ); ?>"
+						data-setting="{{ data.name }}"
+						placeholder="{{ data.placeholder }}">
+				</div>
 			</div>
-		</div>
-		<# if ( data.description ) { #>
-		<div class="elementor-control-field-description">{{{ data.description }}}</div>
-		<# } #>
+			<# if ( data.description ) { #>
+				<div class="elementor-control-field-description">
+					{{{ data.description }}}
+				</div>
+			<# } #>
 		<?php
 	}
 }
