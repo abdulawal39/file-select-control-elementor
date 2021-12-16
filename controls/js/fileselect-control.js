@@ -14,6 +14,16 @@ elementor.addControlView('file-select', elementor.modules.controls.BaseData.exte
 				post_mime_type: [ this.model.attributes.library_type ]
 			};
 		}
+
+		if (!!this.model.attributes.library_title) {
+			wpMediaOptions.title = this.model.attributes.library_title;
+		}
+
+		if (!!this.model.attributes.library_button_text) {
+			wpMediaOptions.button = {
+				text: this.model.attributes.library_button_text
+			};
+		}
 		
 		$el.find('.tnc-select-file').click(function (e) {
 			var tnc_file_uploader = wp.media(wpMediaOptions)
